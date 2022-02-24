@@ -7,6 +7,7 @@
 }
 
 .content{
+  position: relative;
   width: 800px;
   height: 500px;
   background-color: #2e2f30;
@@ -19,6 +20,14 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.content > div {
+  margin: 15px 0;
+}
+
+.btn-group{
+  display :flex; 
+}
+
 .btn{
   background-color: #ff5f5f;
   color: #fff;
@@ -26,6 +35,51 @@
   border-radius: 8px;
   width: 140px;
   height: 60px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
+  margin: 0 10px;
+}
+
+.btn:hover{
+  background-color: #f34040;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+  font-size:60px;
+  font-weight: 400;
+}
+
+h1 > span {
+  color: #ff5f5f;
+}
+
+h2 {
+  font-size: 75px;
+  text-align: center;
+}
+
+h2 > span {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  color: #000;
+  border-radius: 18px;
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.address-connect{
+  cursor: pointer;
 }

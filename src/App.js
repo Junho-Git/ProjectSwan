@@ -8,7 +8,7 @@ const caver = new Caver(window["klaytn"]);
 
 export default function App() {
   const [currentAddress, setCurrentAddress] = useState(
-    "" || window.klaytn.selectedAddress
+    window.klaytn?.selectedAddress || ""
   );
   const [maxToken, setMaxToken] = useState(0);
 
