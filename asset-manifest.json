@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.js": "/ProjectSwan/static/js/main.f90ae7ce.chunk.js",
-    "main.js.map": "/ProjectSwan/static/js/main.f90ae7ce.chunk.js.map",
+    "main.css": "/ProjectSwan/static/css/main.aca27fe0.chunk.css",
+    "main.js": "/ProjectSwan/static/js/main.6d435069.chunk.js",
+    "main.js.map": "/ProjectSwan/static/js/main.6d435069.chunk.js.map",
     "runtime-main.js": "/ProjectSwan/static/js/runtime-main.e746a88b.js",
     "runtime-main.js.map": "/ProjectSwan/static/js/runtime-main.e746a88b.js.map",
-    "static/js/2.9f1b2d98.chunk.js": "/ProjectSwan/static/js/2.9f1b2d98.chunk.js",
-    "static/js/2.9f1b2d98.chunk.js.map": "/ProjectSwan/static/js/2.9f1b2d98.chunk.js.map",
+    "static/js/2.afa56e4c.chunk.js": "/ProjectSwan/static/js/2.afa56e4c.chunk.js",
+    "static/js/2.afa56e4c.chunk.js.map": "/ProjectSwan/static/js/2.afa56e4c.chunk.js.map",
     "index.html": "/ProjectSwan/index.html",
-    "static/js/2.9f1b2d98.chunk.js.LICENSE.txt": "/ProjectSwan/static/js/2.9f1b2d98.chunk.js.LICENSE.txt"
+    "static/css/main.aca27fe0.chunk.css.map": "/ProjectSwan/static/css/main.aca27fe0.chunk.css.map",
+    "static/js/2.afa56e4c.chunk.js.LICENSE.txt": "/ProjectSwan/static/js/2.afa56e4c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e746a88b.js",
-    "static/js/2.9f1b2d98.chunk.js",
-    "static/js/main.f90ae7ce.chunk.js"
+    "static/js/2.afa56e4c.chunk.js",
+    "static/css/main.aca27fe0.chunk.css",
+    "static/js/main.6d435069.chunk.js"
   ]
 }
