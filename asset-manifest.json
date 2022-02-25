@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/ProjectSwan/static/css/main.40c1325c.chunk.css",
-    "main.js": "/ProjectSwan/static/js/main.67bd2c1e.chunk.js",
-    "main.js.map": "/ProjectSwan/static/js/main.67bd2c1e.chunk.js.map",
+    "main.js": "/ProjectSwan/static/js/main.dedf28c9.chunk.js",
+    "main.js.map": "/ProjectSwan/static/js/main.dedf28c9.chunk.js.map",
     "runtime-main.js": "/ProjectSwan/static/js/runtime-main.e746a88b.js",
     "runtime-main.js.map": "/ProjectSwan/static/js/runtime-main.e746a88b.js.map",
-    "static/js/2.a7c58ce7.chunk.js": "/ProjectSwan/static/js/2.a7c58ce7.chunk.js",
-    "static/js/2.a7c58ce7.chunk.js.map": "/ProjectSwan/static/js/2.a7c58ce7.chunk.js.map",
+    "static/js/2.c9ae0557.chunk.js": "/ProjectSwan/static/js/2.c9ae0557.chunk.js",
+    "static/js/2.c9ae0557.chunk.js.map": "/ProjectSwan/static/js/2.c9ae0557.chunk.js.map",
     "index.html": "/ProjectSwan/index.html",
     "static/css/main.40c1325c.chunk.css.map": "/ProjectSwan/static/css/main.40c1325c.chunk.css.map",
-    "static/js/2.a7c58ce7.chunk.js.LICENSE.txt": "/ProjectSwan/static/js/2.a7c58ce7.chunk.js.LICENSE.txt",
+    "static/js/2.c9ae0557.chunk.js.LICENSE.txt": "/ProjectSwan/static/js/2.c9ae0557.chunk.js.LICENSE.txt",
     "static/media/index.css": "/ProjectSwan/static/media/NEXON Lv1 Gothic OTF.ed7ab48e.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.e746a88b.js",
-    "static/js/2.a7c58ce7.chunk.js",
+    "static/js/2.c9ae0557.chunk.js",
     "static/css/main.40c1325c.chunk.css",
-    "static/js/main.67bd2c1e.chunk.js"
+    "static/js/main.dedf28c9.chunk.js"
   ]
 }
