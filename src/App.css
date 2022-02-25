@@ -35,8 +35,8 @@
   border-radius: 8px;
   width: 140px;
   height: 60px;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 200;
   margin: 0 10px;
 }
 
@@ -57,26 +57,26 @@ h1 > span {
 h2 {
   font-size: 75px;
   text-align: center;
+  font-weight: 200;
 }
 
 h2 > span {
   font-size: 30px;
-  font-weight: 400;
 }
 
 .address {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eaeaea;
-  color: #000;
+  background-color: #fff;
+  color: #2e2f30;
   border-radius: 18px;
-  width: 100px;
-  height: 35px;
+  width: 125px;
+  height: 33px;
   position: absolute;
   top: 0px;
   right: 15px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
 }
 

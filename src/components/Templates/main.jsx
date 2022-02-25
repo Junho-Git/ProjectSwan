@@ -31,12 +31,13 @@ export default function Main({
         </div>
         <div className="info">
           <h2>
-            {maxToken} <span>/ 50</span>
+            {maxToken}
+            <span>/50</span>
           </h2>
         </div>
         <div className="btn-group">
           <button className="btn" onClick={mint}>
-            Mint
+            MINT
           </button>
           {currentAddress === admin && (
             <button className="btn" onClick={sendSetup}>

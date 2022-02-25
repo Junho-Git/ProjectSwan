@@ -5,20 +5,24 @@ import "./App.css";
 
 const abi = require("./abi.json");
 const caver = new Caver(window["klaytn"]);
+const contractAddress = "0x739A5B82A2849ab57E41F14096FF0091349D2874";
+const nftContract = new caver.contract(abi, contractAddress);
 
 export default function App() {
   const [currentAddress, setCurrentAddress] = useState(
-    window.klaytn?.selectedAddress || ""
+    window.klaytn?.selectedAddress
   );
   const [maxToken, setMaxToken] = useState(0);
 
   useEffect(() => {
+    getCurrentAccount();
+
     const test = async () => {
       try {
         await window.klaytn.enable();
         window.klaytn.on("accountsChanged", function (accounts) {
-          setCurrentAddress(accounts);
-          console.log("계정정보 변경됨");
+          setCurrentAddress(accounts[0]);
+          console.log("계정정보 변경됨", accounts);
         });
       } catch (error) {
         alert("연결된 지갑이 없습니다. Kaikas 지갑 연결을 부탁드립니다.");
@@ -27,20 +31,23 @@ export default function App() {
     test();
   }, []);
 
-  const contractAddress = "0x739A5B82A2849ab57E41F14096FF0091349D2874";
-  const nftContract = new caver.contract(abi, contractAddress);
+  const getCurrentAccount = () => {
+    setInterval(async () => {
+      if (window.klaytn._kaikas.isEnabled())
+        setCurrentAddress(window.klaytn?.selectedAddress);
+    }, 500);
+  };
 
   const getTotalSupply = async () => {
     const result = await nftContract.methods.totalSupply().call();
     setMaxToken(result);
-    console.log(result);
   };
   getTotalSupply();
 
   const connect = async () => {
     await window.klaytn.enable();
     window.klaytn.on("accountsChanged", function (accounts) {
-      setCurrentAddress(accounts);
+      setCurrentAddress(accounts[0]);
       console.log("계정정보 변경됨");
     });
   };
@@ -57,8 +64,9 @@ export default function App() {
 
     await caver.klay
       .sendTransaction(transactionParams)
-      .on("receipt", (receipt) => {
+      .on("receipt", async (receipt) => {
         alert("민팅 성공! OpenSea 계정을 확인해주세요.");
+        await getTotalSupply();
       })
       .on("error", (error) => {
         alert("민팅에 실패하셨습니다.");
